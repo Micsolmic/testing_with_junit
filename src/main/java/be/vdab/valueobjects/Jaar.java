@@ -1,0 +1,18 @@
+package be.vdab.valueobjects;
+
+public class Jaar {
+
+	private int jaar;
+	
+	public Jaar(int jaar) {
+		this.jaar=jaar;	
+	}
+	
+   public boolean isSchrikkeljaar() {
+	 
+
+	   return jaar % 4 == 0 && jaar % 100 != 0 || jaar % 400 == 0;
+	   
+   }
+	
+}
